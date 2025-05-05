@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'http://36.50.135.128:8081/root/todo-app.git'
+                git branch: 'master', url: 'https://github.com/hachnv8/todoapp.git'
             }
         }
 
