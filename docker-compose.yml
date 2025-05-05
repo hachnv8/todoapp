@@ -7,13 +7,13 @@ services:
     depends_on:
       - mysql
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/tododb
+      SPRING_DATASOURCE_URL: jdbc:mysql://36.50.135.128:3306/todo_app
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: Hach1997!
   mysql:
     image: mysql:8
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: tododb
+      MYSQL_ROOT_PASSWORD: Hach1997!
+      MYSQL_DATABASE: todo_app
     ports:
       - "3306:3306"
