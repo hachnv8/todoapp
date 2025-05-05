@@ -19,6 +19,9 @@ pipeline {
         stage('Build JAR') {
             steps {
                 sh './mvnw clean package -DskipTests'
+                sh 'chmod +x mvnw'
+                sh './mvnw clean package -DskipTests'
+
             }
         }
 
