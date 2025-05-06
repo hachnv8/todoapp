@@ -10,6 +10,11 @@ pipeline {
     }
 
     stages {
+        stage('Clean Workspace') {
+                steps {
+                    deleteDir()
+                }
+            }
         stage('Clone Repository') {
             steps {
                 git branch: 'master', url: 'https://github.com/hachnv8/todoapp.git'
